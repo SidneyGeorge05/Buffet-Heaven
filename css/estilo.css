@@ -1,0 +1,1045 @@
+/* Estilizacação para quebra dos cards galeria
+
+
+@media (min-width: 683px)
+.card-group>.card {
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin-bottom: 0;
+}
+
+    .card-group>.card {
+    margin-bottom: 0px;
+    border: 0px;
+    }
+}
+
+*/
+
+body {
+    padding:0px;
+    margin:0px;
+    background-color: #e0e0e0;
+}
+
+#menuzao{
+    width: 100%;
+    position: relative;
+    position: fixed;
+    z-index: 30;
+    
+}
+
+#menu ul {
+    padding:0px;
+    margin:0px;
+    float: left;
+    width: 100%;
+    background-color:#d3a247;
+    list-style:none;
+    font:90% "Century Gothic";
+    font-size: 12px;
+    
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+    /*background-color:#c2bdbd;*/
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+   /* border-bottom:3px solid d3a247;*/
+    padding: 4px 7%;
+    float:left;
+    width: 20%;
+    /*text-align: center;*/
+    /*transition:.4s;*/
+}
+
+#form{
+    float: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#menu ul li a:hover {
+    background-color:#e4c387;
+    color: #0e0d0d;
+    /*border-bottom:3px solid black;*/
+    /*transition:.4s;*/
+}
+
+#Titulo-site{
+    color: #d3a247;
+    margin-left: 5%;
+    margin-top: 6px;
+    font-family: "Century Gothic";
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+
+#cabecalho{
+    background-color: rgb(24, 23, 23);
+    width: 100%!important;
+}
+
+img#logologo {
+    margin-left: 62px;
+    /* margin-top: 1.5vh; */
+    /* margin-bottom: 1.5vh; */
+    /* left: 80px; */
+}
+
+
+/*Inicio Menu Lateral*/
+
+.wrap{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-superior-fixo{
+    background-color: #009dac;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding-bottom: auto;
+    border-bottom: 1px solid #d3a247;
+}
+
+.ul-menu-lateral{
+    background-color: transparent;
+    list-style: none;
+}
+
+.risco_menu{
+    width: 40px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.fecher-menu {
+
+    
+    cursor: pointer;
+    margin-top: 5.9px;
+    margin-left: 3px;
+    display: none;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+    display: none;
+}
+
+.espaço-para-menu {
+    display: none;
+}
+
+.espaco-para-menu input{
+    display: none;
+}
+
+.nav-menu-lateral{
+    background-color: transparent;
+    width: 33%;
+    height: 100%;
+    left: -350px;
+    position: absolute;
+    transition: all 0s;
+    margin-right: 20%;
+}
+
+.espaco-para-menu input:checked ~ nav{
+    transform: translateX(350px);
+}
+
+.espaco-para-menu input:checked ~ nav {
+    transform: translateX(350px);
+    background-color: rgb(38 37 37);
+}
+
+
+
+.espaco-para-menu input:checked ~ nav .ul-menu-lateral {
+    background-color: rgb(38 37 37); 
+    
+}
+
+.espaco-para-menu a {
+    display: none;
+
+}
+
+.espaco-para-menu input:checked ~ nav li a{
+    
+
+        display: block;
+        padding: 40px 15px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        flex-direction: column;
+        border-top: 1px solid transparent;
+        padding: 2rem 0px;
+        margin-right: 2rem;
+        /* margin-left: 1rem; */
+        text-decoration: none;
+
+    
+}
+
+.espaco-para-menu input:checked ~ nav li a:hover{
+    color:#d3a247;
+}
+
+
+
+
+
+.espaco-para-menu input:checked ~ nav .orcamento {
+    
+
+    background-color: #343a40;
+    height: 55px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 1px solid #d39e00;
+    user-select: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s ease 0s;
+    border-radius: 0.25rem;
+    color: white;
+    padding: 1rem 0px;
+    margin-right: 2rem;
+    /*margin-left: 1rem;*/
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+
+
+
+
+.espaco-para-menu input:checked ~ nav .a-menu-lateral {
+
+
+    border-top: 1px solid #d3a247;
+}
+
+.espaco-para-menu input:checked ~ nav .text-white:hover {
+    color: #d3a247!important;
+}
+
+.espaco-para-menu input:checked ~ label .risco_menu {
+
+
+    display: none;
+}
+
+.espaco-para-menu input:checked ~ label .fecher-menu {
+
+
+    display: block;
+}
+
+.espaco-para-menu input:checked ~ label button  {
+
+
+    display: block;
+}
+
+.espaco-para-menu button, select {
+    text-transform: none;
+    border: 0px;
+    padding: 0px;
+}
+
+.espaco-para-menu button:focus { 
+    border: none; 
+    outline: none;
+}
+
+
+
+.ul-menu-lateral{
+    top: 70px;
+    position: absolute;
+    
+    width: 100%;
+    height: 5000%!important;
+}
+
+.a-menu-lateral{
+    display: block;
+    padding: 40px 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    flex-direction: column;
+    border-top: 1px solid transparent;
+    padding: 2rem 0px;
+    margin-right: 2rem;
+    /*margin-left: 1rem;*/
+    text-decoration: none;
+  
+}
+
+.a-menu-lateral:hover{ 
+    color: rgb(182, 182, 182);
+}
+
+.label-menu-lateral{
+    padding: 15px;
+    position: absolute;
+    z-index: 15;
+    transition: 0.7s;
+}
+
+
+.orcamento {
+    display: none;
+    
+}
+
+
+.cadastre-se{
+    height: 55px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 1px solid 1px solid #31ac00;
+    background-color: #31ac00;
+    user-select: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s ease 0s;
+    border-radius: 0.25rem;
+    color: white;
+    padding: 1rem 0px;
+    margin-right: 2rem;
+    /*margin-left: 1rem;*/
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.text-white{
+    color: white; 
+    transform: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.espaco-para-menu{
+    background-color: #009dac;
+    width: 10.0%;
+    height: 100%;
+}
+
+.risco-menu{
+    width: 40px;
+    padding: 10px;
+    
+}
+
+
+
+.socialMenu {
+    background-color: transparent; 
+    position: fixed; 
+    z-index: 50000; 
+    margin-left: auto; 
+    display: flex; 
+    justify-content: space-between; 
+    margin-left: 82.5% ;   
+    -webkit-box-align: center; 
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: space-between;
+    gap: 2rem; 
+    margin-top: 24px;
+}
+
+/* ===================================================================== */
+
+.card img {
+    height: 50%;
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item .active{
+    height: 85vh;
+    position:unset;
+    
+}
+
+#image-jumbotron{
+    width: 80%;
+    height: 0%;
+    margin-left: 10%;
+    border-radius: 2%;
+}
+
+#botao{
+    float:right;
+}
+
+#txtorcamento{
+    float:left;
+    font-size: 15px;
+    font-family: "Century Gothic";
+}
+
+#txtfacaorca{
+    float: center;
+    margin-left: 10%;
+    padding-top: 6%;
+
+}
+
+#txtfeitoorca{
+    float: center;
+    margin-left: 10%;
+    padding-top: 10%;
+
+}
+
+h1{
+    float: center;
+}
+
+
+/*#txtNomeCliente{
+    float: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}*/
+
+
+
+#card1{
+    margin-left: 0%;
+    margin-right: 0%;
+    border-radius: 2%;
+    font-size: 13px;
+}
+
+#card1-ogrupo{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+#titulo-grupo{
+    color: rgb(20, 20, 20);
+    margin-left: 2%;
+    margin-top: 11px;
+    font-family: "Century Gothic";
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+#txtcard1{
+    color: black;
+}
+
+#cardfacaorc{
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
+#cardsjuntos{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#cardContato{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#menu{
+    text-align: center;
+    
+}
+
+ul{
+    list-style: none;    
+}
+
+#titcard1{
+    font-size: 15px;
+}
+
+#txtcardh{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+/* Rodapé / footer */
+
+
+.Rodape {
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    
+
+    /*
+
+    background-color: #d3a247;
+
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: space-between;
+    flex: 1 1 0%;
+    gap: 1rem;
+    max-width: 76rem;
+    margin: 0px auto;
+    width: 100%;
+    padding: 16px 0px;
+    height: 7rem;*/
+    
+}
+
+.Rodape img {
+    margin-left: 10.5vh;
+    width: 90;
+    height: 90;
+}
+
+.logoRodape {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    display: flex;
+    
+    padding-right: 10% ;
+    padding-top: 5vh;
+    padding-bottom: 2.5vh;
+
+
+    
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+}
+
+svg {
+    color: white;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+svg:hover {
+    color: #d3a247;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: 0.5s;
+    transform: rotateY(360deg); 
+}
+
+.fecher-menu:hover {
+    color: #d3a247;
+    overflow: hidden;
+    vertical-align: middle;
+    
+    
+}
+
+.espaco-para-menu button:hover {
+    overflow: hidden;
+    vertical-align: middle;
+    
+    
+}
+
+
+
+.rodape svg {
+    background-color: blanchedalmond;
+}
+
+.rodape svg :hover{
+    background-color: #C29604;
+}
+
+.copyright {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    padding: 3.5vh;
+}
+
+.copyright img {
+    display: none;
+}
+
+.copyright h1 {
+    display: none;
+}
+/* medias queries da pagina*/
+
+@media screen and (max-width: 670px){
+
+    #menu {
+        display: none;
+    }
+
+
+  }
+  
+  @media screen and (max-width: 648px){
+  
+    .nav-menu-lateral {
+    width: 210px;
+    }
+  }
+  
+  @media screen and (max-width: 597px) {
+    
+    #Titulo-site {
+    font-size: 40px;
+    margin-top: 10px;
+        
+    }
+  
+    img#logologo {
+        margin-top: 5px;
+        width: 70px;
+        height: 70px;
+        }
+  }
+  
+  @media screen and (max-width: 597px) {
+    
+    #Titulo-site {
+    font-size: 40px;
+    margin-top: 10px;
+        
+    }
+  
+    img#logologo {
+        margin-top: 5px;
+        width: 70px;
+        height: 70px;
+        }
+  }
+  
+  @media screen and (max-width: 542px) {
+    
+    #Titulo-site {
+    font-size: 32px;
+    margin-top: 6px;
+        
+    }
+  
+    img#logologo {
+        margin-top: 2px;
+        width: 60px;
+        height: 60px;
+        }
+  
+    .risco_menu {
+        width: 35px;
+        cursor: pointer;
+        margin-top: 6px;
+    }    
+  
+    .label-menu-lateral {
+        padding-left: 15px;
+        padding-top: 8.5px;
+    }
+  }
+
+  @media screen and (max-width: 542px) {
+    .risco_menu {
+        width: 35px;
+        cursor: pointer;
+        margin-top: 6px;
+        display: block;
+    }    
+
+  }
+  
+  @media screen and (max-width: 474px) {
+    
+    #Titulo-site {
+    font-size: 25px;
+    margin-top: 2.5px;
+    margin-left: 2.5%;
+    }
+  
+    .risco_menu {
+        width: 35px;
+        cursor: pointer;
+        margin-top: 0px;
+    }    
+
+    img#logologo {
+        margin-top: 1px;
+        width: 48px;
+        height: 48px;
+        }
+
+    .cabecalho {
+        height: 55px !important;
+    }
+    
+  }
+  
+  @media screen and (max-width: 525px){
+  
+    .display-4 {
+        text-align: center;
+        font-size: 2.8rem;
+    }
+  }
+  
+  @media screen and (max-width: 412px) {
+    
+    #Titulo-site {
+    font-size: 22px;
+    margin-top: 3px;
+    margin-left: 1%;
+        
+    }
+  }
+  
+  @media screen and (max-width: 377px) {
+  
+    img#logologo {
+       
+    margin-left: 40px;
+    width: 48px;
+    height: 48px;
+    
+    }
+
+
+
+    .risco_menu {
+
+        margin-top: 0.1px;
+    } 
+
+    .display-4 {
+        text-align: center;
+        font-size: 2.1rem;
+    }
+  }
+  
+  @media screen and (max-width: 355px) {
+  
+    
+    #mainSlider {
+    display: none;
+    }
+    #Titulo-site {
+        font-size: 22px;
+        margin-top: 15px;
+        margin-left: 1%;
+    }
+    img#logologo {
+        margin-top: 11px;
+ 
+    
+    }
+
+    .risco_menu {
+        margin-top: 11px;
+    }
+  }
+  
+  @media screen and (max-width: 405px){
+  
+    .superior-galeria h1 {
+        font-size: 38px;
+    }
+  }
+  
+  @media screen and (max-width: 764px){
+  
+    .logoRodape h1 {
+        display: none;
+    }
+  
+    header article div{
+        width: 100%;
+    }
+    
+    header article div:last-of-type{
+        display: none;
+    }
+  
+    section{
+        flex-wrap: wrap;
+    }
+  
+    section article{
+        width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 900px){
+  
+    .logoRodape h1 {
+        display: none;
+    }
+  
+    header article div{
+        width: 100%;
+    }
+    
+    header article div:last-of-type{
+        display: none;
+    }
+  
+    section{
+        flex-wrap: wrap;
+    }
+  
+    section article{
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 464px){
+  
+    .logoRodape img {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 465px){
+  
+    .copyright img {
+        display: block;
+    }
+
+    .copyright h1 {
+        display: block;
+    }
+
+    .logoRodape {
+        padding-bottom: 0vh;
+    }
+  }
+
+  @media screen and (max-width: 320px){
+  
+    .nav-menu-lateral {
+        width: 100%;
+    }
+    .display-4 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 326;
+    }
+
+  }
+
+    @media screen and (max-width: 2000px){
+  
+
+    .display-4 {
+        text-align: center;
+
+        
+    }
+
+  }
+
+  @media screen and (max-width: 991px){
+  
+
+    .shadow {
+        margin-left: 10%;
+       
+    }
+
+    .card3index {
+       margin-left: 25%;
+    }
+
+  }
+
+
+
+  @media screen and (max-width: 767px){
+  
+
+    .shadow {
+        margin-left: 22%; 
+    }
+  }
+
+  @media screen and (max-width: 523px){
+  
+
+    .shadow {
+        margin-left: 18%; 
+    }
+  }
+
+
+  @media screen and (max-width: 318px){
+  
+    .copyright img {
+        display: none;
+    }
+
+    .copyright h1 {
+        display: none;
+    }
+  }
+
+
+
+  @media screen and (max-width: 1374px){
+  
+    .socialMenu {
+        margin-left: 78%;
+    }
+  }
+  
+  @media screen and (max-width: 1159px){
+  
+    .socialMenu {
+        margin-left: 77%;
+    }
+  }
+
+  @media screen and (max-width: 1076px){
+  
+    .socialMenu {
+        margin-left: 69%;
+    }
+  }
+
+  @media screen and (max-width: 900px){
+  
+    .socialMenu {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 543px){
+    .ul-menu-lateral {
+        top: 60px;
+
+    }
+  }
+
+  @media screen and (max-width: 474px){  
+    .ul-menu-lateral {
+        top: 49px;
+
+    }
+    .shadow {
+        margin-left: 15%;
+    }
+  }
+
+  @media screen and (max-width: 456px){
+    .shadow {
+        margin-left: 12.5%;
+    }
+  }
+
+  @media screen and (max-width: 420px){
+    .shadow {
+        margin-left: 8.5%;
+    }
+  }
+
+  @media screen and (max-width: 385px){
+    .shadow {
+        margin-left: 5.5%;
+    }
+  }
+
+  @media screen and (max-width: 365px){
+    .shadow {
+        margin-left: 3.5%;
+    }
+  }
+
+  @media screen and (max-width: 335px){
+    .shadow {
+        margin-left: 0%;
+    }
+  }
+
+  
+  @media screen and (max-width: 355px){
+  
+    .ul-menu-lateral {
+        top: 59px;
+
+    }
+  }
+
+  @media screen and (max-width: 991px){
+    .card3index {
+       margin-left: 25%;
+    }
+
+  }
+
+  @media screen and (max-width: 308px) {
+    img#logologo {
+    margin-left: 40px;
+    width: 32px;
+    height: 32px;
+    margin-top: 20px!important;
+    }
+}
+  /* 
+  CONFIGS CARROUSEL
+  */
+
+  .carousel-indicators .active {
+    background-color: #fff;
+}
+
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,.5);
+}
+
+.card-title .venha-saber-sobre-nos {
+    text-align: center !important;
+}
+
+.socialMenu svf:hover {
+    color: #C29604;
+}
